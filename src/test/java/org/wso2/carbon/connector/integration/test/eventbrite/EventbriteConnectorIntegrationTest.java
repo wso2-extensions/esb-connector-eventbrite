@@ -42,7 +42,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
     private MediationLibraryAdminServiceStub adminServiceStub = null;
     private ProxyServiceAdminClient proxyAdmin;
     private String repoLocation = null;
-    private String eventbriteConnectorFileName = CONNECTOR_NAME + "-connector-1.0.0.zip";
+    private String eventbriteConnectorFileName = CONNECTOR_NAME + "-connector-1.0.1-SNAPSHOT.zip";
     private Properties eventbriteConnectorProperties = null;
     private String pathToProxiesDirectory = null;
     private String pathToRequestsDirectory = null;
