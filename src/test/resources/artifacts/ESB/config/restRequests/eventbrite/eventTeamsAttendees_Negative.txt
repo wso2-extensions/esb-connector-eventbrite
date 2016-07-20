@@ -2,5 +2,5 @@
 "apiUrl":"%s",
 "accessToken":"%s",
 "eventId":"1395",
-"teamId":"950"
+"teamId":"xxx"
 }
