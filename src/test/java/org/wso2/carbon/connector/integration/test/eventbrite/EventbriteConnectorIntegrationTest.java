@@ -42,7 +42,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
     private MediationLibraryAdminServiceStub adminServiceStub = null;
     private ProxyServiceAdminClient proxyAdmin;
     private String repoLocation = null;
-    private String eventbriteConnectorFileName = CONNECTOR_NAME + "-connector-1.0.1-SNAPSHOT.zip";
+    private String eventbriteConnectorFileName = CONNECTOR_NAME + "-connector-1.0.1.zip";
     private Properties eventbriteConnectorProperties = null;
     private String pathToProxiesDirectory = null;
     private String pathToRequestsDirectory = null;
@@ -173,7 +173,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -214,7 +214,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
             log.info(responseHeader);
         } finally {
             proxyAdmin.deleteProxy(methodName);
@@ -253,7 +253,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -312,7 +312,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -350,7 +350,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 404);
+            Assert.assertTrue(responseHeader == 500);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -505,7 +505,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 403);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -544,7 +544,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 403);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -816,7 +816,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -835,7 +835,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -949,7 +949,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 500);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
@@ -1006,7 +1006,7 @@ public class EventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         proxyAdmin.addProxyService(new DataHandler(new URL(proxyFilePath)));
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            Assert.assertTrue(responseHeader == 400);
+            Assert.assertTrue(responseHeader == 404);
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
