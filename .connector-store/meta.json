@@ -4,7 +4,7 @@
     "category": "Other",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/Eventbrite+Connector",
     "description": "The Eventbrite connector allows you to access the Eventbrite REST API through the WSO2 ESB. Eventbrite is an Event Management System with an API which allows creating and managing events including venue management, marketing, selling tickets, and financial management.",
-    "status": "Active",
+    "status": "Inactive",
     "labels": [
         "connector"
     ],
